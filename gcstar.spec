@@ -38,6 +38,11 @@ Provides:      perl(GCItemsLists::GCListOptions) = %{version}
 Provides:      perl(GCItemsLists::GCImageListComponents) = %{version}
 Provides:      perl(GCGraphicComponents::GCDoubleLists) = %{version}
 Provides:      perl(GCGraphicComponents::GCBaseWidgets) = %{version}
+Provides:      perl(GCGraphicComponents::GCBasicWidgets) = %{version}
+Provides:      perl(GCGraphicComponents::GCCustomWidgets) = %{version}
+Provides:      perl(GCGraphicComponents::GCPictureWidgets) = %{version}
+Provides:      perl(GCGraphicComponents::GCWidgets) = %{version}
+
 # The last version of gcfilms was 6.4
 Obsoletes:     gcfilms <= 6.4
 BuildRequires: coreutils
