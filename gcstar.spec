@@ -65,7 +65,6 @@ cd gcstar
 %{__install} bin/gcstar %{buildroot}%{_bindir}
 %{__install} -d %{buildroot}%{_datadir}
 %{__cp} -a share/gcstar %{buildroot}%{_datadir}
-chmod 755 %{buildroot}%{_datadir}/%{name}/xslt/applyXSLT.pl
 %{__install} -d %{buildroot}%{_datadir}/%{name}/lib
 %{__cp} -a lib/gcstar/* %{buildroot}%{_datadir}/%{name}/lib
 %{__install} -d %{buildroot}%{_mandir}/man1
