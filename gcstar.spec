@@ -115,7 +115,7 @@ mkdir -p %{buildroot}%{_datadir}/icons/hicolor/scalable/apps
 %{__install} -m 644 share/gcstar/icons/gcstar_scalable.svg %{buildroot}%{_datadir}/icons/hicolor/scalable/apps/%{name}.svg
 
 %files
-%doc CHANGELOG README
+%doc %{name}/CHANGELOG %{name}/README
 %license LICENSE
 %{_datadir}/gcstar
 %{_datadir}/icons/hicolor/*/apps/%{name}.png
