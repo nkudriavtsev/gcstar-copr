@@ -59,7 +59,7 @@ may also search and filter your collection by criteria.
 %build
 
 %install
-cd GCstar-v%{version}
+cd gcstar
 %{__mkdir_p} %{buildroot}%{_prefix}
 %{__install} -d %{buildroot}%{_bindir}
 %{__install} bin/gcstar %{buildroot}%{_bindir}
