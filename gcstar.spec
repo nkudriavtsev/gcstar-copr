@@ -12,25 +12,33 @@ Patch0:         gcstar.path.patch
 # https://bugzilla.redhat.com/show_bug.cgi?id=1232956
 BuildArch:      noarch
 
+AutoReqProv: no
 Requires:      hicolor-icon-theme
-Requires:      perl-Gtk3
-Requires:      perl-Gtk3-SimpleList
-Requires:      perl-XML-Simple
-Requires:      perl-Archive-Tar
-Requires:      perl-Archive-Zip
-Requires:      perl-IO-Compress
-Requires:      perl-Date-Calc
-Requires:      perl-DateTime-Format-Strptime
-Requires:      perl-Digest-MD5
-Requires:      perl-GD
-Requires:      perl-GDGraph
-Requires:      perl-GDTextUtil
-Requires:      perl-Image-ExifTool
-Requires:      perl-MIME-Base64
-Requires:      perl-MP3-Info
-Requires:      perl-Time-Piece
-Requires:      perl-JSON
-Requires:      perl-Locale-Codes
+Requires:      perl
+Requires:      perl-threads, perl-threads-shared
+Requires:      perl-FindBin, perl-Unicode-Normalize
+Requires:      perl(DateTime::Format::Strptime)
+Requires:      perl(Gtk3)
+Requires:      perl(Gtk3::SimpleList)
+Requires:      perl(JSON)
+Requires:      perl(LWP::Protocol::https)
+Requires:      perl(XML::Simple)
+Requires:      perl(Archive::Tar)
+Requires:      perl(Archive::Zip)
+Requires:      perl(Compress::Zlib)
+Requires:      perl(Date::Calc)
+Requires:      perl(Digest::MD5)
+Requires:      perl(Time::Piece)
+Requires:      perl(Locale::Codes)
+Requires:      perl(MIME::Base64)
+Recommends:    perl(GD)
+Recommends:    perl(GD::Graph)
+Recommends:    perl(GD::Text)
+Recommends:    perl(Image::ExifTool)
+Recommends:    perl(MP3::Info)
+Recommends:    perl(MP3::Tag)
+Recommends:    perl(Net::FreeDB)
+Recommends:    perl(Ogg::Vorbis::Header::PurePerl)
 Provides:      perl(GCItemsLists::GCImageLists) = %{version}
 Provides:      perl(GCItemsLists::GCTextLists) = %{version}
 Provides:      perl(GCPlugins::GCfilms::GCThemoviedb) = %{version}
