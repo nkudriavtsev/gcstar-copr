@@ -10,7 +10,6 @@ Source0:        https://gitlab.com/GCstar/GCstar/-/archive/v%{version}/GCstar-v%
 Patch0:         gcstar.path.patch
 # We patch gcstar to allow comic volumes to number 1000000
 # https://bugzilla.redhat.com/show_bug.cgi?id=1232956
-Patch1:         gcstar-comics-volume.patch
 BuildArch:      noarch
 
 Requires:      hicolor-icon-theme
@@ -55,7 +54,6 @@ may also search and filter your collection by criteria.
 %prep
 %setup -q -n GCstar-v%{version}
 %patch -P0 -b .path
-%patch -P1
 
 
 %build
