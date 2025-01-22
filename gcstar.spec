@@ -54,8 +54,8 @@ may also search and filter your collection by criteria.
 
 %prep
 %setup -q -n GCstar-v%{version}
-%patch -P0 -p1 -b .path
-%patch -P1 -p1
+%patch -P0 -b .path
+%patch -P1
 
 
 %build
