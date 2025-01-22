@@ -53,7 +53,7 @@ the collection type. And also who you've lent your them to. You
 may also search and filter your collection by criteria.
 
 %prep
-%setup -q -n gcstar
+%setup -q -n GCstar-v%{vrsion}
 %patch -P0 -p1 -b .path
 %patch -P1 -p1
 
